@@ -16,16 +16,18 @@ Chapter 3 introduces the [Spring Cloud Config](https://cloud.spring.io/spring-cl
 To build the code examples for Chapter 3 as a docker image, open a command-line window change to the directory where you have downloaded the chapter 3 source code.
 
 Run the following maven command.  This command will execute the [Spotify docker plugin](https://github.com/spotify/docker-maven-plugin) defined in the pom.xml file.  
+```shell
+   ./mvnw clean package docker:build
+```
 
-   **./mvnw clean package docker:build**
-
-This is the first chapter we will have multiple Spring projects that need to be be built and compiled. Running the above command at the root of the project directory will build all of the projects. If everything builds successfully you should see a message indicating that the build was successful.
+This is the first chapter we will have multiple Spring projects that need to be built and compiled. Running the above command at the root of the project directory will build all of the projects. If everything builds successfully you should see a message indicating that the build was successful.
 
 # Running the services in Chapter 3
 
 Now we are going to use docker-compose to start the actual image. To start the docker image,
 change to the docker-compose directory in your chapter 3 source code. Issue the following docker-compose command:
-
-   **docker-compose -f docker/common/docker-compose.yml up**
+```shell
+   docker-compose -f docker/common/docker-compose.yml up
+```
 
 If everything starts correctly you should see a bunch of Spring Boot information fly by on standard out. At this point all of the services needed for the chapter code examples will be running.
