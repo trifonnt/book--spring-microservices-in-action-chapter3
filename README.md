@@ -37,3 +37,17 @@ If everything starts correctly you should see a bunch of Spring Boot information
 ```shell
    docker-compose -f docker/common/docker-compose.yml logs
 ```
+
+# URLs
+
+ - http://localhost:8888/licensing-service.yml
+ - http://localhost:8888/licensing-service-dev.yml
+ - http://localhost:8888/licensing-service-prod.yml
+
+ - http://localhost:8080/v1/organizations/{organizationId}/licenses/
+ - http://localhost:8080/v1/organizations/e254f8c-c442-4ebe-a82a-e2fc1d1ff78a/licenses/
+ - http://localhost:8080/v1/organizations/e254f8c-c442-4ebe-a82a-e2fc1d1ff78a/licenses/f3831f8c-c338-4ebe-a82a-e2fc1d1ff78a
+ - http://localhost:8080/v1/organizations/e254f8c-c442-4ebe-a82a-e2fc1d1ff78a/licenses/t9876f8c-c338-4abc-zf6a-ttt1
+ - http://localhost:8080/v1/organizations/442adb6e-fa58-47f3-9ca2-ed1fecdfe86c/licenses/
+ - http://localhost:8080/v1/organizations/442adb6e-fa58-47f3-9ca2-ed1fecdfe86c/licenses/38777179-7094-4200-9d61-edb101c6ea84
+ - http://localhost:8080/v1/organizations/442adb6e-fa58-47f3-9ca2-ed1fecdfe86c/licenses/08dbe05-606e-4dad-9d33-90ef10e334f9
