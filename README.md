@@ -31,3 +31,9 @@ change to the docker-compose directory in your chapter 3 source code. Issue the 
 ```
 
 If everything starts correctly you should see a bunch of Spring Boot information fly by on standard out. At this point all of the services needed for the chapter code examples will be running.
+
+# Check logs of running services
+
+```shell
+   docker-compose -f docker/common/docker-compose.yml logs
+```
