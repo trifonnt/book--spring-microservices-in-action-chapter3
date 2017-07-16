@@ -17,7 +17,7 @@ To build the code examples for Chapter 3 as a docker image, open a command-line 
 
 Run the following maven command.  This command will execute the [Spotify docker plugin](https://github.com/spotify/docker-maven-plugin) defined in the pom.xml file.  
 
-   **mvn clean package docker:build**
+   **./mvnw clean package docker:build**
 
 This is the first chapter we will have multiple Spring projects that need to be be built and compiled. Running the above command at the root of the project directory will build all of the projects. If everything builds successfully you should see a message indicating that the build was successful.
 
